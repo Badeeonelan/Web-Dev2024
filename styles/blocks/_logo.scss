@@ -1,0 +1,9 @@
+.logo {
+    @include fluid-text(28, 20);
+    font-weight: 700;
+    color: var(--color-dark);
+
+    &--light {
+        color: var(--color-light);
+    }
+}

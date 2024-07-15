@@ -1,0 +1,23 @@
+@import './normalize',
+        './fonts',
+        './mixins',
+        './media',
+        './variables',
+        './utils',
+        './globals';
+
+@import './blocks/logo',
+        './blocks/mobile-menu',
+        './blocks/header',
+        './blocks/section-title',
+        './blocks/section-subtitle',
+        './blocks/button',
+        './blocks/benefits-card',
+        './blocks/hero',
+        './blocks/industry',
+        './blocks/presentation',
+        './blocks/review',
+        './blocks/comment-card',
+        './blocks/contact-us',
+        './blocks/field',
+        './blocks/footer';

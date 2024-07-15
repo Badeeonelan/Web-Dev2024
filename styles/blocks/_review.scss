@@ -1,0 +1,32 @@
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 591px;
+    padding-block: 75px 94px;
+
+    &__wrapper {
+        background-color: #fafafa;
+    }
+
+    &__title {
+        max-width: 232px;
+        margin-bottom: 10px;
+    }
+
+    &__subtitle {
+        max-width: 262px;
+        margin-bottom: 60px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+
+        @include tablet-above {
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 30px;
+        }
+    }
+}

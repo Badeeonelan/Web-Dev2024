@@ -1,0 +1,24 @@
+.field {
+    &__input {
+        width: 100%;
+        max-width: 750px;
+        height: var(--input-height);
+        padding-left: 20px;
+        border: var(--border);
+        border-radius: var(--border-radius-small);
+
+        @include tablet-above {
+            min-width: 286px;
+        }
+
+        &--textarea {
+            min-height: 140px;
+            padding: 14px 20px;
+            margin-bottom: 40px;
+
+            @include tablet-above {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

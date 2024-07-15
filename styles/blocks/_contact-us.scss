@@ -1,0 +1,100 @@
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-block: 115px 40px;
+
+    @include tablet-above {
+        padding-bottom: 90px;
+    }
+
+    &__wrapper {
+        background: url('/images/contact-us-bg.jpg') center center/cover no-repeat;
+    }
+
+    &__body {
+        padding-bottom: 85px;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+
+        @include tablet-above {
+            max-width: 602px;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding-bottom: 0;
+        }
+    }
+
+    &__label {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--color-dark);
+    }
+
+    &__title {
+        text-align: left;
+        line-height: 1.25;
+        margin-bottom: 40px;
+    }
+
+    &__button {
+        height: var(--button-height-large);
+        max-width: 418px;
+    }
+
+    &__footer {
+        min-height: 302px;
+        padding-block: 40px;
+
+        @include tablet-above {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 142px;
+        }
+
+        &-text {
+            margin-left: 20px;
+
+            @include tablet-above {
+                margin-left: 0;
+            }
+        }
+
+        &-label {
+            font-size: 24px;
+            text-align: left;
+            max-width: 249px;
+            margin-bottom: 6px;
+
+            @include tablet-above {
+                max-width: 100%;
+            }
+        }
+
+        &-description {
+            max-width: 184px;
+            margin-bottom: 50px;
+
+            @include tablet-above {
+                max-width: 100%;
+                margin-bottom: 0;
+            }
+        }
+
+        &-button {
+            width: 100%;
+
+            @include tablet-above {
+                max-width: 160px;
+            }
+        }
+    }
+
+    &__textarea {
+        @include tablet-above {
+            grid-column: 1 / 3;
+        }
+    }
+}

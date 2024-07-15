@@ -1,0 +1,119 @@
+.footer {
+    min-height: 1083px;
+    padding-block: 53px 70px;
+    background-color: var(--color-dark);
+
+    @include tablet-above {
+        min-height: 500px;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        row-gap: 50px;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+
+        @include tablet-above {
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 57px;
+            border-bottom: 1px solid #364067;
+            row-gap: 0;
+        }
+    }
+
+    &__social-list {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        column-gap: 20px;
+    }
+
+    &__categories {
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            row-gap: 30px;
+
+            @include tablet-above {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                flex-direction: row;
+                flex-wrap: wrap;
+                column-gap: 59px;
+            }
+
+            @include desktop-above {
+                flex-wrap: nowrap;
+            }
+        }
+
+        &-action {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            row-gap: 20px;
+
+            &-form {
+                &-input,
+                &-button {
+                    height: 58px;
+                }
+
+                &-input {
+                    border-radius: 5px 0 0 5px;
+                    border: none;
+                }
+
+                &-button {
+                    border-radius: 0 5px 5px 0;
+                    margin-left: -5px;
+                }
+                
+            }
+
+            &-description {
+                font-size: 12px;
+                font-weight: 400;
+                color: var(--color-light);
+            }
+        }
+    }
+
+    &__info {
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            row-gap: 20px;
+        }
+        &-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--color-light);
+        }
+        &-list {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            row-gap: 10px;
+        }
+        &-item {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--color-light);
+        }
+    }
+}

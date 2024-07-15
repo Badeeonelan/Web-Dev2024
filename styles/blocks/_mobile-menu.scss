@@ -1,0 +1,15 @@
+.mobile-menu {
+    display: none;
+    padding-block: 90px;
+    font-size: 30px;
+    font-weight: 400;
+    transition-duration: var(--transition-duration);
+
+    &-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+    }
+}

@@ -1,0 +1,30 @@
+.industry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 75px 160px;
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__subtitle {
+        max-width: 305px;
+        margin-bottom: 40px;
+    }
+
+    &__benefits-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+
+        @include tablet-above {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        @include desktop-above {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}

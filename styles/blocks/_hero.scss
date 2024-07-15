@@ -1,0 +1,41 @@
+.hero {
+    padding-block: 80px 52px;
+    padding-inline: 30px;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
+
+    @include tablet-above {
+        min-height: 692px;
+        background: url('/images/hero-background.jpg') center center/cover no-repeat;
+        padding-top: 224px;
+    }
+
+    &__actions {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        align-items: center;
+
+        @include tablet-above {
+            flex-direction: row;
+            row-gap: 0;
+            column-gap: 10px;
+        }
+    }
+
+    &__title {
+        @include fluid-text(58, 40);
+    }
+
+    &__subtitle {
+        max-width: 279px;
+
+        @include tablet-above {
+            max-width: 539px;
+        }
+    }
+
+}

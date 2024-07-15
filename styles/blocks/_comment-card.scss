@@ -1,0 +1,36 @@
+.comment-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    max-width: 330px;
+    row-gap: 20px;
+    background-color: var(--color-light);
+    border: var(--border);
+    padding: 30px 35px;
+
+    &__description {
+        line-height: 1.71;
+    }
+
+    &__person {
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            row-gap: 3px;
+        }
+
+        &-name {
+            font-weight: 600;
+            color: var(--color-accent);
+        }
+
+        &-role {
+            font-weight: 600;
+
+        }
+    }
+}

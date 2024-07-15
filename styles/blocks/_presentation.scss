@@ -1,0 +1,45 @@
+.presentation {
+    min-height: 921px;
+    padding-block: 98px 174px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    &__wrapper {
+        background: linear-gradient(180deg, rgba(243,243,243,1) 54%, rgba(0,0,0,1) 54%);
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__subtitle {
+        margin-bottom: 60px;
+    }
+
+    &__player {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__video {
+        &-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            width: 98px;
+            aspect-ratio: 1;
+            background-color: var(--color-green);
+            border-radius: 100%;
+
+            svg * {
+                fill: var(--color-light);
+            }
+        }
+    }
+}
